@@ -1,0 +1,30 @@
+/* Gradient background for alerts */
+.alert-success {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-danger {
+    background: linear-gradient(90deg, #dc3545, #c82333);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtle scale animation for alert pop-up */
+.animated-alert {
+    animation: fadeInOut 3s ease-in-out, scaleIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
